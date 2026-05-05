@@ -2,12 +2,12 @@
 name: fact-checker
 description: |
   삼각측량·연역·수치정합·LLM보정 4축 기반 팩트체크 엔진. 문서 내 팩트를 자동 추출→검색 검증→판정→수정안 생성. LIGHT(수치만)/DEEP(전수) 2모드.
-  P1: 팩트체크, fact check, 팩트검증, 사실확인, 삼각측량, 수치검증, 교차검증, factcheck, 검증해줘.
-  P2: 팩트체크해줘, 검증해줘, 확인해줘, verify, fact-check this.
-  P3: triangulation, cross-verification, numerical consistency, deductive verification.
-  P4: 제안서 보내기 전에, 제출 전에, 발표 전에, IR 전에.
-  P5: 검증보고서로, .md로.
-  NOT: 단순맞춤법(→제출청소), 논리구조(→ruby-skill), 리서치(→research-frame).
+    P1: 팩트체크, fact check, 팩트검증, 사실확인, 삼각측량, 수치검증, 교차검증, factcheck, 검증해줘, 팩트확인, 수치확인, 데이터검증, 정보검증, 내용검증, 오류찾기, 틀린거찾아줘, 팩트체킹, fact checking, 팩트, 검증, 확인.
+    P2: 팩트체크해줘, 검증해줘, 확인해줘, verify, fact-check this, 틀린 거 찾아줘, 수치 맞아, 이거 맞아, 검토해줘, 사실이야.
+    P3: triangulation, cross-verification, numerical consistency, deductive verification, fact extraction, source grading.
+    P4: 제안서·IR·보고서 제출 전에, 수치가 의심될 때, 발표 전 마지막 검증시.
+    P5: 검증보고서로, .md로.
+    NOT: 단순맞춤법(→submission-cleanup), 논리구조(→ruby-skill), 리서치(→research-skill), 글쓰기(→shaper-skill).
 ---
 
 # Fact Checker
