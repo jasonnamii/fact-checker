@@ -8,6 +8,28 @@ license: Proprietary
 
 팩트체크, fact check, 사실확인, 수치검증, 교차검증 요청이 오면 문서 안의 주장·숫자·고유명사를 분리해 검증한다. 목표는 그럴듯한 서술이 아니라 제출 전 위험한 오류를 잡는 것이다.
 
+
+## Skill Boundaries
+
+- **하는 것** — "삼각측량·수치정합·출처등급 기반 팩트체크 엔진.
+- **안 하는 것** — 맞춤법(→submission-cleanup), 리서치확장(→research-skill), 글쓰기(→shaper-skill)."
+
+## When to Use
+
+- 사용자가 "팩트체크해줘", "검증해줘", "verify." 같은 표현으로 발동
+- 도메인 작업이 필요한 시점
+- **안 쓸 때** — 맞춤법(→submission-cleanup), 리서치확장(→research-skill), 글쓰기(→shaper-skill)."
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+| 3 | scripts/ 실행 권한 | 권한 보정 후 재시도 |
+
+
 ## 절대 규칙
 
 1. 주장, 근거, 판단을 분리한다.
@@ -40,7 +62,34 @@ references/ 자료는 모두 읽고 시작하지 않는다. 숫자, 삼각측량
 
 필요하면 마지막에 `맹점`을 1~2줄로만 붙인다.
 
-## Gotchas
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/fact-checker_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | 검증보고서로, .md로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/fact-checker/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/axis-deduction.md` | axis deduction | 해당 단계 진입 시 |
+| `references/axis-numerical.md` | axis numerical | 해당 단계 진입 시 |
+| `references/axis-triangulation.md` | axis triangulation | 해당 단계 진입 시 |
+| `references/llm-weakness.md` | llm weakness | 해당 단계 진입 시 |
+| `references/tolerance.md` | tolerance | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `submission-cleanup`
+- 후속 작업 → `research-skill`
+- 후속 작업 → `shaper-skill`
+
+## Failure Modes (Gotchas)
 
 | 함정 | 대응 |
 |---|---|
