@@ -1,5 +1,6 @@
 ---
 name: fact-checker
+version: 1.0
 description: |
   삼각측량·수치정합·출처등급 기반 팩트체크 엔진. 문서·주장·수치의 참/거짓/부분일치/오도 가능성을 판정하고 수정안을 제시한다. 트리거: 팩트체크, fact check, 사실확인, 수치검증, 교차검증, 팩트체크해줘, 검증해줘, verify. NOT: 맞춤법(→submission-cleanup), 리서치확장(→research-skill), 글쓰기(→shaper-skill).
 license: Proprietary
